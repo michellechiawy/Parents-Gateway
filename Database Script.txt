@@ -1,0 +1,26 @@
+1. Create tables before running
+
+create table teacher (teacherId varchar(100));
+create table student (studentId varchar(100), suspendStatus varchar(1));
+create table student (teacherId varchar(100), studentId varchar(100));
+
+2. Insert necessary data
+insert into teacher values ('teacherken@gmail.com');
+insert into teacher values ('teacherjoe@gmail.com');
+
+insert into student values ('studentjon@gmail.com','N');
+insert into student values ('studenthon@gmail.com','N');
+insert into student values ('commonstudent1@gmail.com','N');
+insert into student values ('commonstudent2@gmail.com','N');
+insert into student values ('student_only_under_teacher_ken@gmail.com','N');
+insert into student values ('studentmary@gmail.com','N');
+
+insert into relation values ('teacherken@gmail.com', 'commonstudent1@gmail.com');
+insert into relation values ('teacherken@gmail.com', 'commonstudent2@gmail.com');
+insert into relation values ('teacherken@gmail.com', 'student_only_under_teacher_ken@gmail.com');
+insert into relation values ('teacherjoe@gmail.com', 'commonstudent1@gmail.com');
+insert into relation values ('teacherjoe@gmail.com', 'commonstudent2@gmail.com');
+
+3. Execute the following after running test cases
+delete from relation where teacherId ='teacherken@gmail.com' and studentId in ('studentjon@gmail.com','studenthon@gmail.com');
+update student set suspendStatus ='N' where studentId ='studentmary@gmail.com';
