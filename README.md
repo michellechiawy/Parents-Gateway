@@ -9,9 +9,9 @@ Teachers need a system where they can perform administrative functions for their
 3. Testing - Mocha, Should, Supertest
 
 ## Get Started
-### 1. Create your database and run database scripts found in `Database Script.txt` (Step 1 and 2)
-### 2. Configure connections to the database in file `/app/models/db.js`
-### 3. Navigate to the project directory and execute the following in your console.
+1. Create your database and run database scripts found in `Database Script.txt` (Step 1 and 2)
+2. Configure connections to the database in file `/app/config/db.config.js`
+3. Navigate to the project directory and execute the following in your console.
 ```
 node server.js
 ```
@@ -29,8 +29,8 @@ Successfully connected to the database.
 5. /api/retrievefornotifications
 
 ## Running Unit Tests
-### 1. Ensure application is running on port 3000 first.
-### 2. Open a new console, navigate to the project directory and execute the following.
+1. Ensure application is running on port 3000 first.
+2. Open a new console, navigate to the project directory and execute the following.
 ```
 npm test
 ```
@@ -51,7 +51,7 @@ The console should show:
 
   5 passing (65ms)
 ```
-### 3. Please run Step 3 of database scripts found in `Database Script.txt` after testing to revert database changes
+3. Please run Step 3 of database scripts found in `Database Script.txt` after testing to revert database changes
 
 ## Postman Collection
 Can be found in `Govtech.postman_collection.json`
